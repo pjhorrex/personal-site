@@ -1,7 +1,10 @@
 <template>
-<nav class="navbar navbar-expand-md navbar-dark bg-primary">
+<nav class="navbar navbar-expand-md navbar-dark bg-primary text-light">
   <div class="container">
-    <g-link to="/" class="navbar-brand">{{ $static.metadata.siteName }}</g-link>
+    <g-link to="/" class="navbar-brand">
+      <span class="brand-icon"><FontAwesomeIcon icon="laptop-code" /></span>
+      <span class="brand-name ml-2">{{ $static.metadata.siteName }}</span>
+    </g-link>
     <button class="navbar-toggler" type="button" data-toggle="collapse">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -30,9 +33,6 @@ query {
 </static-query>
 
 <style lang="scss">
-@import "../styles/custom";
-@import "bootstrap/scss/bootstrap";
-
 .navbar {
   font-family: $font-custom-headline; 
 }

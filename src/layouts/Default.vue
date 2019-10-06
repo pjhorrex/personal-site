@@ -26,9 +26,6 @@ query {
 </static-query>
 
 <style lang="scss">
-@import "../styles/custom";
-@import "bootstrap/scss/bootstrap";
-
 h1, h2, h3, h4, h5 {
   color: $primary;
   font-family: $font-custom-headline;
