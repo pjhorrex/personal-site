@@ -5,7 +5,7 @@
         <div class="justify-content-lg-center col-lg-2 col-md-3 col-4 my-md-auto mb-3">
           <g-image class="about-header-image w-100" alt="Example image" src="~/img/phil.jpg" width="500" />
         </div>
-        <div class="col-xl-6 col-lg-7 col-md-8 my-auto">
+        <div class="col-xl-6 col-lg-7 col-md-8 my-3">
           <h1 class="text-light" v-html="aboutHeadline"></h1>
 
           <p class="mb-0" v-html="aboutText"></p>
@@ -16,7 +16,7 @@
               :class="{ 'disabled': link.disabled }"
               :key="key"
               :href="link.href">
-              <FontAwesomeIcon class="fa-2x fa-fw justify-content-center" :icon="['fab', link.faClass]" />
+              <FontAwesomeIcon class="fa-2x fa-fw justify-content-center" :icon="[link.faPrefix, link.faClass]" />
             </a>
           </nav>
 
@@ -39,22 +39,32 @@ export default {
       socialText: "Find me online",
       social: [
         {
+          href: "mailto:pjhorrex@gmail.com",
+          faPrefix: "fas",
+          faClass: "envelope",
+          disabled: false
+        },
+        {
           href: "https://github.com/pjhorrex",
+          faPrefix: "fab",
           faClass: "github-alt",
           disabled: false
         },
         {
           href: "https://www.instagram.com/philliphorrex/",
+          faPrefix: "fab",
           faClass: "instagram",
           disabled: true
         },
         {
           href: "https://keybase.io/pjhorrex",
+          faPrefix: "fab",
           faClass: "keybase",
           disabled: false
         },
         {
           href: "https://www.facebook.com/pjhorrex",
+          faPrefix: "fab",
           faClass: "facebook-f",
           disabled: true
         }
@@ -124,7 +134,7 @@ $disabled-link: rgba(23, 59, 49, 0.33);
     $margin: 10rem;
 
     margin-top: calc(#{$margin} - 56px);
-    margin-bottom: $margin;
+    margin-bottom: calc(#{$margin} / 2);
     text-align: left;
   }
 }
