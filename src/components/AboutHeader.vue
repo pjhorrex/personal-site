@@ -1,78 +1,79 @@
 <template>
   <div class="about-header bg-primary text-light">
     <div class="container h-100 d-flex">
-      <div class="about-info-container row justify-content-center">
+      <div class="about-info-container row justify-content-center"
+        v-for="edge in $static.about.edges" :key="edge.node.id"
+      >
         <div class="justify-content-lg-center col-lg-2 col-md-3 col-4 my-md-auto mb-3">
           <g-image class="about-header-image w-100" alt="Example image" src="~/img/phil.jpg" width="500" />
         </div>
         <div class="col-xl-6 col-lg-7 col-md-8 my-3">
-          <h1 class="text-light" v-html="aboutHeadline"></h1>
+          <h1 class="text-light">
+            {{ edge.node.title }}
+            <span>{{ edge.node.subtitle }}</span>
+          </h1>
 
-          <p class="mb-0" v-html="aboutText"></p>
+          <p class="mb-0" v-html="edge.node.content"></p>
 
-          <nav class="nav mt-3 mb-2 justify-content-center justify-content-md-start">
+          <nav class="nav mt-3 mb-2 justify-content-center justify-content-md-start"
+            v-for="edge in $static.social.edges" :key="edge.node.id"
+          >
             <a class="nav-link d-flex" target="_blank"
-              v-for="(link, key) in social"
-              :class="{ 'disabled': link.disabled }"
+              v-for="(service, key) in edge.node.services"
+              :class="{ 'disabled': service.disabled }"
               :key="key"
-              :href="link.href">
-              <FontAwesomeIcon class="fa-2x fa-fw justify-content-center" :icon="[link.faPrefix, link.faClass]" />
+              :href="service.href">
+              <FontAwesomeIcon class="fa-2x fa-fw justify-content-center"
+                :icon="[service.faprefix, service.faclass]"
+                />
             </a>
           </nav>
 
-          <span class="social-caption m-2">{{ socialText }}</span>
+          <span class="social-caption m-2">{{ edge.node.socialtext }}</span>
         </div>
       </div>
     </div>
   </div>
 </template>
 
-<script>
-export default {
-  data: function() {
-    return {
-      aboutHeadline: `Hello there! <span>My name is Phil.</span>`,
-      aboutText: `I'm a web developer and data analyst from the Philadelphia area, currently working
-        at <a href="http://www.barrack.com" target="_blank">Barrack, Rodos &amp; Bacine</a>. I'm
-        a runner, diehard Eagles fan, and video game lover. Probably out looking for my next cup
-        of coffee.`,
-      socialText: "Find me online",
-      social: [
-        {
-          href: "mailto:pjhorrex@gmail.com",
-          faPrefix: "fas",
-          faClass: "envelope",
-          disabled: false
-        },
-        {
-          href: "https://github.com/pjhorrex",
-          faPrefix: "fab",
-          faClass: "github-alt",
-          disabled: false
-        },
-        {
-          href: "https://www.instagram.com/philliphorrex/",
-          faPrefix: "fab",
-          faClass: "instagram",
-          disabled: true
-        },
-        {
-          href: "https://keybase.io/pjhorrex",
-          faPrefix: "fab",
-          faClass: "keybase",
-          disabled: false
-        },
-        {
-          href: "https://www.facebook.com/pjhorrex",
-          faPrefix: "fab",
-          faClass: "facebook-f",
-          disabled: true
+<static-query>
+query IndexContent {
+  about: allIndexContent(filter: {ident: {eq:"about"}}, limit: 1) {
+    edges {
+      node {
+        id
+        ident
+        content
+        title
+        subtitle
+        socialtext
+        services {
+          name
+          href
+          faprefix
+          faclass
+          disabled
         }
-      ]
+      }
+    }
+  },
+  social: allIndexContent(filter: {ident: {eq:"social"}}, limit:1) {
+    edges {
+      node {
+        id
+        ident
+        services {
+          name
+          href
+          faprefix
+          faclass
+          disabled
+        }
+      }
     }
   }
 }
-</script>
+</static-query>
 
 <style lang="scss">
 $disabled-link: rgba(23, 59, 49, 0.33);

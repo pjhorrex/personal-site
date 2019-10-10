@@ -1,5 +1,5 @@
 <template>
-<nav class="navbar navbar-expand-md navbar-dark bg-primary text-light">
+<nav class="navbar navbar-expand-md navbar-custom navbar-dark bg-primary">
   <div class="container">
     <g-link to="/" class="navbar-brand">
       <span class="brand-icon"><FontAwesomeIcon icon="laptop-code" /></span>
@@ -10,8 +10,11 @@
     </button>
     <div class="collapse navbar-collapse">
       <div class="navbar-nav ml-auto">
-        <g-link class="nav-item nav-link" to="/">Home</g-link>
-        <g-link class="nav-item nav-link" to="/about/">About</g-link>
+        <a class="nav-item nav-link" href="#">Projects</a>
+        <!--
+        <a class="nav-item nav-link" href="#">Timeline</a>
+        -->
+        <a class="nav-item nav-link" href="#">Résumé</a>
       </div>
     </div>
   </div>
@@ -35,6 +38,17 @@ query {
 <style lang="scss">
 .navbar {
   font-family: $font-custom-headline; 
+}
+
+.navbar-dark {
+  .navbar-brand {
+    color: $light !important;
+  }
+}
+
+$light-opacity: rgba(231, 255, 228, 90%);
+.navbar-dark .navbar-nav .nav-link {
+  color: $light-opacity;
 }
 </style>
 

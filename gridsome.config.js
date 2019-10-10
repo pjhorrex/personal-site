@@ -18,12 +18,20 @@ function addStyleResource (rule) {
 
 module.exports = {
   siteName: 'pjhorrex.com',
-  plugins: [],
+  plugins: [
+    {
+      use: '@gridsome/source-filesystem',
+      options: {
+        path: 'content/index/*.{md,yml}',
+        typeName: 'IndexContent'
+      }
+    }
+  ],
   chainWebpack (config) {
     const types = ['vue-modules', 'vue', 'normal-modules', 'normal']
 
     types.forEach(type => {
       addStyleResource(config.module.rule('scss').oneOf(type))
     })
-	}
+  }
 }

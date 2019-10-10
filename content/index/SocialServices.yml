@@ -1,0 +1,27 @@
+sident: social
+services:
+  - name: "Mail"
+    href: "mailto:pjhorrex@gmail.com"
+    faprefix: "fas"
+    faclass: "envelope"
+    disabled: false
+  - name: "GitHub"
+    href: "https://github.com/pjhorrex"
+    faprefix: "fab"
+    faclass: "github-alt"
+    disabled: false
+  - name: "Instgram"
+    href: "https://www.instagram.com/philliphorrex"
+    faprefix: "fab"
+    faclass: "instagram"
+    disabled: true
+  - name: "Keybase"
+    href: "https://keybase.io/pjhorrex"
+    faprefix: "fab"
+    faclass: "keybase"
+    disabled: false
+  - name: "Facebook"
+    href: "https://www.facebook.com/pjhorrex"
+    faprefix: "fab"
+    faclass: "facebook-f"
+    disabled: true
