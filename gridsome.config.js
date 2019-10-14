@@ -25,6 +25,13 @@ module.exports = {
         path: 'content/index/*.{md,yml}',
         typeName: 'IndexContent'
       }
+    },
+    {
+      use: '@gridsome/source-filesystem',
+      options: {
+        path: 'content/events/*.md',
+        typeName: 'Events'
+      }
     }
   ],
   chainWebpack (config) {

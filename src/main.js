@@ -19,7 +19,9 @@ import {
 } from '@fortawesome/free-brands-svg-icons'
 import {
   faLaptopCode,
-  faEnvelope
+  faEnvelope,
+  faRunning,
+  faBriefcase
 } from '@fortawesome/free-solid-svg-icons'
 import {
   FontAwesomeIcon
@@ -31,7 +33,9 @@ library.add(
   faKeybase,
   faFacebookF,
   faLaptopCode,
-  faEnvelope
+  faEnvelope,
+  faRunning,
+  faBriefcase
 )
 
 export default function (Vue, { router, head, isClient }) {

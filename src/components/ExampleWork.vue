@@ -1,5 +1,5 @@
 <template>
-	<div class="exmple-work-container container-fluid d-flex">
+	<div class="exmple-work-container container-fluid d-flex mb-3">
 		<div class="row py-md-5 py-5 mx-auto justify-content-center">
 			<div class="col-md-3 col-9 py-1 px-3">
 				<g-image class="w-100 shadow-lg rounded grow"
