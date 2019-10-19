@@ -5,7 +5,7 @@
         v-for="edge in $static.about.edges" :key="edge.node.id"
       >
         <div class="justify-content-lg-center col-lg-2 col-md-3 col-4 my-md-auto mb-3">
-          <g-image class="about-header-image w-100" alt="Example image" src="~/img/phil.jpg" width="500" />
+          <g-image class="about-header-image w-100" alt="Phil Horrex" src="~/img/phil.jpg" width="500" />
         </div>
         <div class="col-xl-6 col-lg-7 col-md-8 my-3">
           <h1 class="text-light">
