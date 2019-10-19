@@ -1,4 +1,6 @@
 <template>
+<div>
+  <h3 class="p-3 mb-0 mx-auto text-center section-headline">What I've been working on</h3>
 	<div class="exmple-work-container container-fluid d-flex mb-3">
 		<div class="row py-md-5 py-5 mx-auto justify-content-center">
 			<div class="col-md-3 col-9 py-1 px-3">
@@ -27,6 +29,7 @@
 			</div>
 		</div>
 	</div>
+</div>
 </template>
 
 <style lang="scss">
