@@ -35,4 +35,12 @@ h1, h2, h3, h4, h5 {
   font-weight: bolder;
 }
 
+.section-headline {
+  border: 4px solid $primary;
+  max-width: 26rem;
+  border-radius: 1rem;
+  color: $light;
+  background-color: $primary;
+}
+
 </style>
