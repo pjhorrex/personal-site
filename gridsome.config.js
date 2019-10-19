@@ -32,6 +32,13 @@ module.exports = {
         path: 'content/events/*.md',
         typeName: 'Events'
       }
+    },
+    {
+      use: '@gridsome/source-filesystem',
+      options: {
+        path: 'content/resume.md',
+        typeName: 'Resume'
+      }
     }
   ],
   chainWebpack (config) {
