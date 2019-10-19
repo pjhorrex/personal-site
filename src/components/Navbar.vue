@@ -10,11 +10,8 @@
     </button>
     <div class="collapse navbar-collapse">
       <div class="navbar-nav ml-auto">
-        <a class="nav-item nav-link" href="#">Projects</a>
-        <!--
-        <a class="nav-item nav-link" href="#">Timeline</a>
-        -->
-        <a class="nav-item nav-link" href="#">Résumé</a>
+        <g-link class="nav-item nav-link" to="/" exact>About me</g-link>
+        <g-link class="nav-item nav-link" to="/resume/" exact>Résumé</g-link>
       </div>
     </div>
   </div>
