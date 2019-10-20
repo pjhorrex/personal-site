@@ -14,7 +14,6 @@ languages:
   - Sass
   - Javascript
   - PHP
-  - PERL
 frameworks:
   - Laravel
   - Vue.js
@@ -64,7 +63,7 @@ Most recently a growing portion of my responsibilities have been to use my decad
 
 
 ## Internships
-Sofware development internships I completed during my time attending Drexel University:
+Development internships I completed during my time attending Drexel University:
 
 ### Dupont
 #### Philadelphia PA, September 2006&mdash;March 2007

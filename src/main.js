@@ -21,7 +21,9 @@ import {
   faLaptopCode,
   faEnvelope,
   faRunning,
-  faBriefcase
+  faBriefcase,
+  faPhone,
+  faHome
 } from '@fortawesome/free-solid-svg-icons'
 import {
   FontAwesomeIcon
@@ -35,7 +37,9 @@ library.add(
   faLaptopCode,
   faEnvelope,
   faRunning,
-  faBriefcase
+  faBriefcase,
+  faPhone,
+  faHome
 )
 
 export default function (Vue, { router, head, isClient }) {
