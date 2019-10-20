@@ -23,7 +23,8 @@ import {
   faRunning,
   faBriefcase,
   faPhone,
-  faHome
+  faHome,
+  faPlane
 } from '@fortawesome/free-solid-svg-icons'
 import {
   FontAwesomeIcon
@@ -39,7 +40,8 @@ library.add(
   faRunning,
   faBriefcase,
   faPhone,
-  faHome
+  faHome,
+  faPlane
 )
 
 export default function (Vue, { router, head, isClient }) {
