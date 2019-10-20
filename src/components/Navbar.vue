@@ -1,5 +1,5 @@
 <template>
-<nav class="navbar navbar-expand-md navbar-custom navbar-dark bg-primary">
+<nav class="navbar navbar-expand-md navbar-custom navbar-dark">
   <div class="container">
     <g-link to="/" class="navbar-brand">
       <span class="brand-icon"><FontAwesomeIcon icon="laptop-code" /></span>

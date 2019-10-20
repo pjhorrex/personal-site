@@ -1,7 +1,7 @@
 <template>
-<div>
+<div class="example-work">
   <h3 class="p-3 mb-0 mx-auto text-center section-headline">What I've been working on</h3>
-	<div class="exmple-work-container container-fluid d-flex mb-3">
+	<div class="exmple-work-container container-fluid d-flex">
 		<div class="row py-md-5 py-5 mx-auto justify-content-center">
 			<div class="col-md-3 col-9 py-1 px-3">
 				<g-image class="w-100 shadow-lg rounded grow"
@@ -34,8 +34,17 @@
 
 <style lang="scss">
 $background-color: #91d5b0;
+.example-work {
+  background-color: rgba($primary, 0.8);
+
+  h3.section-headline {
+    background-color: rgba($primary, 0);
+    border-color: rgba($primary, 0);
+  }
+}
+
 .exmple-work-container {
-	background-color: $background-color;
+  background-color: rgba($background-color, 0.6);
 
 	.row {
     max-width: 87rem;;

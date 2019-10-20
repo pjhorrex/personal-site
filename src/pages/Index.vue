@@ -1,7 +1,9 @@
 <template>
   <Layout>
-    <AboutHeader />
-    <ExampleWork />
+    <div class="about-background">
+      <AboutHeader />
+      <ExampleWork />
+    </div>
     <EventTimeline />
   </Layout>
 </template>
@@ -22,3 +24,11 @@ export default {
   }
 }
 </script>
+
+<style lang="scss">
+  .about-background {
+    background-image: url("/assets/img/philadelphia.jpg");
+    background-repeat:no-repeat;
+    background-position: center top;
+  }
+</style>

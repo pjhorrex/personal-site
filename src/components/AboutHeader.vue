@@ -1,5 +1,5 @@
 <template>
-  <div class="about-header bg-primary text-light">
+  <div class="about-header text-light">
     <div class="container h-100 d-flex">
       <div class="about-info-container row justify-content-center"
         v-for="edge in $static.about.edges" :key="edge.node.id"
@@ -80,6 +80,8 @@ $disabled-link: rgba(23, 59, 49, 0.33);
 
 .about-header {
   text-align: center;
+  background-color: rgba($primary, 0.8);
+  margin-top: -56px;
 
   a {
     color: $light;
@@ -130,11 +132,10 @@ $disabled-link: rgba(23, 59, 49, 0.33);
 }
 
 .about-info-container {
-  @include media-breakpoint-up(md) {
-    //height: 30rem;
-    $margin: 10rem;
+  $margin: 10rem;
+  margin-top: calc(#{$margin} - 56px);
 
-    margin-top: calc(#{$margin} - 56px);
+  @include media-breakpoint-up(md) {
     margin-bottom: calc(#{$margin} / 2);
     text-align: left;
   }
