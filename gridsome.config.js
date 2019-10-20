@@ -41,6 +41,9 @@ module.exports = {
       }
     }
   ],
+  transformers: {
+    remark: {}
+  },
   chainWebpack (config) {
     const types = ['vue-modules', 'vue', 'normal-modules', 'normal']
 

@@ -16,7 +16,12 @@
             <h5 class="card-title">{{ edge.node.title }}</h5>
             <h6 class="card-subtitle mb-2 text-muted">{{ formatDate(edge.node.date) }}</h6>
             <hr class="mt-2 mb-3">
-            <div class="card-content" v-html="edge.node.content"></div>
+            <div class="row d-flex">
+              <div class="card-content" :class="[ edge.node.image ? 'col-8' : 'col-12' ]" v-html="edge.node.content"></div>
+              <div class="card-image col-4" v-if="edge.node.image">
+                <g-image :src="edge.node.image.src" :alt="edge.node.image.alt" class="w-100" width="500" />
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -32,7 +37,7 @@ import moment from 'moment'
 export default {
   methods: {
     formatDate: function(date) {
-      return moment(date).format('MM/DD/YYYY')
+      return moment(date).format('MMMM, YYYY')
     }
   }
 }
@@ -49,6 +54,10 @@ query Events {
         date
         faprefix
         faclass
+        image {
+          src,
+          alt
+        }
         content
       }
     }
