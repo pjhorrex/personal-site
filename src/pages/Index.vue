@@ -13,7 +13,7 @@ import EventTimeline from '~/components/EventTimeline.vue'
 
 export default {
   metaInfo: {
-    title: 'Hello, world!'
+    title: 'Phil Horrex'
   },
   components: {
     AboutHeader,

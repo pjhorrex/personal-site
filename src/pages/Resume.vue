@@ -67,7 +67,7 @@ import SkillList from '~/components/ResumeSkillList'
 
 export default {
   metaInfo: {
-    title: 'Resume'
+    title: 'Résumé'
   },
   components: {
     SkillList,
