@@ -81,23 +81,23 @@ query Resume {
   resume: allResume {
     edges {
       node {
-        id,
-        name,
-        email,
-        phone,
+        id
+        name
+        email
+        phone
         location {
-          street,
-          city,
-          state,
+          street
+          city
+          state
           zip
-        },
-        languages,
-        frameworks,
-        environments,
-        tooling,
-        database,
-        software,
-        education,
+        }
+        languages
+        frameworks
+        environments
+        tooling
+        database
+        software
+        education
         content
       }
     }
@@ -138,7 +138,7 @@ query Resume {
   h4 {
     font-style: italic;
     font-size: 1em;
-    color: $gray-700;
+    color: darken($primary, 15%);
   }
 }
 

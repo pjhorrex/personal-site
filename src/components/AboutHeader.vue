@@ -94,6 +94,7 @@ $disabled-link: rgba(23, 59, 49, 0.33);
       margin: 0 0.5rem;
       background-color: darken($primary, 5%);
       border-radius: 0.75rem;
+      border: 0.15rem $light solid;
 
       &:first-child {
         margin-left: 0;

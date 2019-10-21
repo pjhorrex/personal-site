@@ -32,9 +32,17 @@ export default {
     flex-wrap: wrap;
 
     li {
+      margin: 0.2rem;
+      padding: 0.3rem;
+      background-color: #b7f0c7;
+      color: darken($primary, 10%);
+      border-radius: 0.25rem;
+      font-weight: bold;
+      font-size: 0.9em;
+
       &:not(:last-child) {
         &:after {
-          content: ',\00a0';
+          //content: ',\00a0';
         }
       }
     }
