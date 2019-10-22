@@ -1,17 +1,17 @@
 <template>
-<nav class="navbar navbar-expand-md navbar-custom navbar-dark">
+<nav class="navbar navbar-expand navbar-custom navbar-dark">
   <div class="container">
-    <g-link to="/" class="navbar-brand">
+    <g-link to="/" class="navbar-brand" exact>
       <span class="brand-icon"><FontAwesomeIcon icon="laptop-code" /></span>
-      <span class="brand-name ml-2">{{ $static.metadata.siteName }}</span>
+      <span class="brand-name ml-2 d-none d-sm-inline">{{ $static.metadata.siteName }}</span>
     </g-link>
-    <button class="navbar-toggler" type="button" data-toggle="collapse">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu-items">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse">
+    <div class="collapse navbar-collapse" id="menu-items">
       <div class="navbar-nav ml-auto">
         <g-link class="nav-item nav-link" to="/" exact>About me</g-link>
-        <g-link class="nav-item nav-link" to="/resume/" exact>Résumé</g-link>
+        <g-link class="nav-item nav-link" to="/resume/" exact>Resume</g-link>
       </div>
     </div>
   </div>

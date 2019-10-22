@@ -7,7 +7,7 @@
         <div class="row">
           <div class="col-12 col-lg-3 py-3 resume-skills">
             <div class="row">
-              <div class="col-12 col-md-4 col-sm-6 col-lg-12 mb-3 pb-3">
+              <div class="col-12 col-md-4 col-sm-6 col-lg-12 p-3">
                 <h3 class="w-100 text-center">{{ edge.node.name }}</h3>
                 <g-image class="resume-image d-flex mx-auto rounded-circle mt-2" alt="Phil Horrex" src="~/img/phil.jpg" width="140" />
               </div>
@@ -67,7 +67,7 @@ import SkillList from '~/components/ResumeSkillList'
 
 export default {
   metaInfo: {
-    title: 'Résumé'
+    title: 'Resume'
   },
   components: {
     SkillList,

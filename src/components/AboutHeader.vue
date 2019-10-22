@@ -18,7 +18,7 @@
           <nav class="nav mt-3 mb-2 justify-content-center justify-content-md-start"
             v-for="edge in $static.social.edges" :key="edge.node.id"
           >
-            <a class="nav-link d-flex" target="_blank"
+            <a class="nav-link d-flex m-1" target="_blank"
               v-for="(service, key) in edge.node.services"
               :class="{ 'disabled': service.disabled }"
               :key="key"

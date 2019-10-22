@@ -14,7 +14,7 @@ services:
     href: "https://www.instagram.com/philliphorrex"
     faprefix: "fab"
     faclass: "instagram"
-    disabled: true
+    disabled: false
   - name: "Keybase"
     href: "https://keybase.io/pjhorrex"
     faprefix: "fab"
@@ -24,4 +24,4 @@ services:
     href: "https://www.facebook.com/pjhorrex"
     faprefix: "fab"
     faclass: "facebook-f"
-    disabled: true
+    disabled: false

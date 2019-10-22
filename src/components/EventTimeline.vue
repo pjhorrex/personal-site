@@ -3,7 +3,7 @@
   <div class="container justify-content-center pt-3">
     <h3 class="p-3 mb-0 ml-auto mr-0 mr-lg-auto text-center section-headline">What I've been up to</h3>
     <div class="row bg-light d-flex flex-column">
-      <div class="col-11 col-lg-6 px-3 pt-3 card-container"
+      <div class="col-11 col-lg-6 pt-3 card-container"
         v-for="edge in $static.events.edges" :key="edge.node.id"
       >
         <div class="card shadow">
@@ -55,7 +55,7 @@ query Events {
         faprefix
         faclass
         image {
-          src,
+          src (width: 500),
           alt
         }
         content
