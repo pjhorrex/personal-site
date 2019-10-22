@@ -27,7 +27,7 @@ export default {
 
 <style lang="scss">
   .about-background {
-    background-image: url("/assets/img/philadelphia.jpg");
+    background-image: url("~@/img/philadelphia.jpg");
     background-repeat:no-repeat;
     background-position: center top;
   }
