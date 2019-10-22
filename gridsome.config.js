@@ -36,6 +36,13 @@ module.exports = {
     {
       use: '@gridsome/source-filesystem',
       options: {
+        path: 'content/examples/*.md',
+        typeName: 'Examples'
+      }
+    },
+    {
+      use: '@gridsome/source-filesystem',
+      options: {
         path: 'content/resume.md',
         typeName: 'Resume'
       }
