@@ -51,10 +51,6 @@ query Events {
         date
         faprefix
         faclass
-        image {
-          src (width: 500),
-          alt
-        }
         content
       }
     }
