@@ -17,10 +17,7 @@
             <h6 class="card-subtitle mb-2 text-muted">{{ formatDate(edge.node.date) }}</h6>
             <hr class="mt-2 mb-3">
             <div class="row d-flex">
-              <div class="card-content" :class="[ edge.node.image ? 'col-8' : 'col-12' ]" v-html="edge.node.content"></div>
-              <div class="card-image col-4" v-if="edge.node.image">
-                <g-image :src="edge.node.image.src" :alt="edge.node.image.alt" class="w-100" width="500" />
-              </div>
+              <div class="card-content col-12" v-html="edge.node.content"></div>
             </div>
           </div>
         </div>
@@ -133,6 +130,17 @@ query Events {
     width: 41px;
     z-index: 100;
     border-width: 5px !important;
+  }
+}
+
+.card-body {
+  img {
+    max-width: 200px;
+    max-height: 200px;
+    width: auto;
+    height: auto;
+    padding: 0.5rem;
+    float: right;
   }
 }
 
