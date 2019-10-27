@@ -1,8 +1,8 @@
 <template>
-<div class="container-fluid bg-light mb-3">
+<div class="container-fluid bg-light mb-3 background-texture">
   <div class="container justify-content-center pt-3">
     <h3 class="p-3 mb-0 ml-auto mr-0 mr-lg-auto text-center section-headline">What I've been up to</h3>
-    <div class="row bg-light d-flex flex-column">
+    <div class="row d-flex flex-column">
       <div class="col-11 col-lg-6 pt-3 card-container"
         v-for="edge in $static.events.edges" :key="edge.node.id"
       >
@@ -75,6 +75,10 @@ query Events {
 }
 */
 
+.background-texture {
+  background-image: repeating-linear-gradient(45deg, transparent, transparent 15px, rgba(0, 0, 0, 0.02) 15px, rgba(0, 0, 0, 0.02) 30px);
+}
+
 .card-container {
   border-right: 5px solid $primary;
   padding-right: 26px !important;
@@ -137,6 +141,7 @@ query Events {
     height: auto;
     padding: 0.5rem;
     float: right;
+    object-fit: contain;
   }
 }
 
