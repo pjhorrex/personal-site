@@ -10,10 +10,6 @@ import 'typeface-roboto'
 // Bootstrap
 import 'bootstrap'
 
-import $ from 'jquery';
-
-window.$ = $;
-
 // FontAwesome
 import {
   library
