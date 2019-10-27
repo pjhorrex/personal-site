@@ -26,7 +26,7 @@
                 </ul>
             </div>
             <div class="col-lg-10">
-                <p v-html="node.content"></p>
+                <div v-html="node.content"></div>
                 <ul class="framework-list list-inline">
                     <li v-if="node.github != ''" class="list-inline-item">
                         <a :href="node.github" class="badge badge-light" target="_blank"><FontAwesomeIcon :icon="['fab', 'github']"/> Github</a>

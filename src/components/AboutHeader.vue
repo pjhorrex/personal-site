@@ -13,7 +13,7 @@
             <span>{{ edge.node.subtitle }}</span>
           </h1>
 
-          <p class="mb-0" v-html="edge.node.content"></p>
+          <div class="mb-0" v-html="edge.node.content"></div>
 
           <nav class="nav mt-3 mb-2 justify-content-center justify-content-md-start"
             v-for="edge in $static.social.edges" :key="edge.node.id"

@@ -7,9 +7,6 @@ import DefaultLayout from '~/layouts/Default.vue'
 import 'typeface-fira-sans'
 import 'typeface-roboto'
 
-// Bootstrap
-import 'bootstrap'
-
 // FontAwesome
 import {
   library
