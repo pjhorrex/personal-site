@@ -2,16 +2,25 @@
   <Layout>
     <div class="about-background">
       <AboutHeader />
-      <ExampleWork />
+      <ExampleWork
+        @example-clicked="onExampleClicked"
+        :activeExampleProp="activeExample"
+      />
     </div>
+    <ExampleDetails
+      v-show="activeExample != ''"
+      @example-clicked="onExampleClicked"
+      :node="activeNode"
+    />
     <EventTimeline />
   </Layout>
 </template>
 
 <script>
-import AboutHeader from '~/components/AboutHeader.vue'
-import ExampleWork from '~/components/ExampleWork.vue'
-import EventTimeline from '~/components/EventTimeline.vue'
+import AboutHeader from '~/components/AboutHeader';
+import ExampleWork from '~/components/ExampleWork';
+import ExampleDetails from '~/components/ExampleDetails';
+import EventTimeline from '~/components/EventTimeline';
 
 export default {
   metaInfo: {
@@ -20,7 +29,20 @@ export default {
   components: {
     AboutHeader,
     ExampleWork,
-    EventTimeline
+    EventTimeline,
+    ExampleDetails
+  },
+  data: function() {
+    return {
+      activeExample: '',
+      activeNode: null
+    }
+  },
+  methods: {
+    onExampleClicked: function(value) {
+      this.activeExample = value.id;
+      this.activeNode = value;
+    }
   }
 }
 </script>

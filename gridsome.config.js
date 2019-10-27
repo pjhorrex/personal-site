@@ -53,9 +53,15 @@ module.exports = {
   },
   chainWebpack (config) {
     const types = ['vue-modules', 'vue', 'normal-modules', 'normal']
+    const svgRule = config.module.rule('svg')
 
     types.forEach(type => {
       addStyleResource(config.module.rule('scss').oneOf(type))
     })
+
+    svgRule.uses.clear()
+    svgRule
+      .use('vue-svg-loader')
+      .loader('vue-svg-loader')
   }
 }

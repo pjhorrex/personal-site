@@ -10,6 +10,10 @@ import 'typeface-roboto'
 // Bootstrap
 import 'bootstrap'
 
+import $ from 'jquery';
+
+window.$ = $;
+
 // FontAwesome
 import {
   library
@@ -18,7 +22,14 @@ import {
   faGithubAlt,
   faInstagram,
   faKeybase,
-  faFacebookF
+  faFacebookF,
+  faBootstrap,
+  faLaravel,
+  faSass,
+  faVuejs,
+  faFontAwesome,
+  faFontAwesomeLogoFull,
+  faGithub
 } from '@fortawesome/free-brands-svg-icons'
 import {
   faLaptopCode,
@@ -27,7 +38,9 @@ import {
   faBriefcase,
   faPhone,
   faHome,
-  faPlane
+  faPlane,
+  faTimesCircle,
+  faExternalLinkAlt
 } from '@fortawesome/free-solid-svg-icons'
 import {
   FontAwesomeIcon
@@ -44,7 +57,15 @@ library.add(
   faBriefcase,
   faPhone,
   faHome,
-  faPlane
+  faPlane,
+  faTimesCircle,
+  faBootstrap,
+  faLaravel,
+  faSass,
+  faVuejs,
+  faFontAwesome,
+  faGithub,
+  faExternalLinkAlt
 )
 
 export default function (Vue, { router, head, isClient }) {
