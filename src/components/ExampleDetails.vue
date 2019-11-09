@@ -12,7 +12,12 @@
             <FontAwesomeIcon :icon="['fas', 'times-circle']" />
         </button>
         <div class="container mt-4 mb-2" v-if="node != null">
-          <h3 class="text-light mt-3">{{ node.alt }}</h3>
+            <h3 class="text-light mt-3">
+                <a class="text-light" v-if="node.demo != ''" :href="node.demo" target="_blank">
+                    {{ node.alt }} <FontAwesomeIcon class="fa-xs fa-fw" :icon="['fas', 'external-link-alt']"/>
+                </a>
+                <span v-else>{{ node.alt }}</span>
+            </h3>
           <div class="row">
             <div class="col-12">
                 <ul class="framework-list list-inline">
