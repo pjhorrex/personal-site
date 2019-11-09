@@ -2,7 +2,7 @@
 <div class="example-work">
   <h3 class="p-3 mb-0 mx-auto text-center section-headline">What I've been working on</h3>
 	<div class="exmple-work-container container-fluid d-flex">
-		<div class="row py-md-5 py-5 mx-auto justify-content-center">
+		<div class="row py-3 mx-auto justify-content-center">
 			<div class="col-md-3 col-6 p-3"
         v-for="edge in $static.examples.edges" :key="edge.node.id"
         @click="$emit('example-clicked', edge.node)"

@@ -1,5 +1,5 @@
 <template>
-<div class="container-fluid bg-light mb-3 background-texture">
+<div class="container-fluid bg-light mb-3">
   <div class="container justify-content-center pt-3">
     <h3 class="p-3 mb-0 ml-auto mr-0 mr-lg-auto text-center section-headline">What I've been up to</h3>
     <div class="row d-flex flex-column">
@@ -59,26 +59,6 @@ query Events {
 </static-query>
 
 <style lang="scss">
-/*
-.headline-container {
-  position: relative;
-
-  &:before {
-      content: "";
-      position: absolute;
-      left: calc(50% - 127px);
-      bottom: -8px;
-      height: 1px;
-      width: 255px;
-      border-bottom: 5px solid $primary;
-  }
-}
-*/
-
-.background-texture {
-  background-image: repeating-linear-gradient(45deg, transparent, transparent 15px, rgba(0, 0, 0, 0.02) 15px, rgba(0, 0, 0, 0.02) 30px);
-}
-
 .card-container {
   border-right: 5px solid $primary;
   padding-right: 26px !important;
