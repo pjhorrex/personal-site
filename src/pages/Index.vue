@@ -8,9 +8,10 @@
       />
     </div>
     <ExampleDetails
-      v-show="activeExample != ''"
+      v-if="activeExample != ''"
       @example-clicked="onExampleClicked"
       :node="activeNode"
+      :key="1"
     />
     <EventTimeline />
   </Layout>
