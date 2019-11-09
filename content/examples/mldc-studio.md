@@ -3,7 +3,7 @@ img: ../../src/img/examples/main-line-dance-company-studio-website.png
 alt: Main Line Dance Company Website
 order: 1
 github: ''
-demo: ''
+demo: 'https://www.mainlinedancecompany.com'
 frameworks:
   - name: Jekyll
     fa: ''

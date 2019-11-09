@@ -3,7 +3,7 @@ img: ../../src/img/examples/main-line-dance-company-show-website.png
 alt: Main Line Dance Company Show Website
 order: 4
 github: ''
-demo: ''
+demo: 'https://www.spotlight.mainlinedancecompany.com'
 frameworks:
   - name: Bootstrap
     fa: bootstrap
