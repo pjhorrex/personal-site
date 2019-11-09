@@ -21,7 +21,6 @@ import {
   faSass,
   faVuejs,
   faFontAwesome,
-  faFontAwesomeLogoFull,
   faGithub
 } from '@fortawesome/free-brands-svg-icons'
 import {
