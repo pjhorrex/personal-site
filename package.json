@@ -15,7 +15,7 @@
     "@gridsome/transformer-remark": "^0.3.4",
     "@gridsome/transformer-yaml": "^0.2.1",
     "bootstrap": "^4.3.1",
-    "gridsome": "^0.7.0",
+    "gridsome": "^0.7.13",
     "jquery": "^3.4.1",
     "moment": "^2.24.0",
     "popper.js": "^1.16.0",
